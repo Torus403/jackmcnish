@@ -1,37 +1,107 @@
+body {
+    font-family: sans-serif;
+    background-color: aliceblue;
+}
+
+a, h1, .bio {
+    text-decoration: none;
+}
+
+
+nav{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+li {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 68px;
+
+}
+
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.header-right {
+    margin: 40px;
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10%;
+
+}
+
+.bio {
+    max-width: 400px;
+    text-align: start;
+    font-size: larger;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+
+.main-body {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
 
 .css-typing p {
-  border-right: .15em solid orange;
-  font-family: "Courier";
-  font-size: 14px;
+  border-right: .15em solid black;
+  font-size: 34px;
   white-space: nowrap;
   overflow: hidden;
 }
 .css-typing p:nth-child(1) {
-  width: 12.5em;
-  -webkit-animation: type 2s steps(40, end);
-  animation: type 2s steps(40, end);
+  width: 10em;
+  -webkit-animation: type 1s steps(40, end);
+  animation: type 1s steps(40, end);
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
 .css-typing p:nth-child(2) {
-  width: 8em;
+  width: 7em;
   opacity: 0;
-  -webkit-animation: type2 2s steps(40, end);
-  animation: type2 2s steps(40, end);
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation: type2 1s steps(40, end);
+  animation: type2 1s steps(40, end);
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
 .css-typing p:nth-child(3) {
-  width: 10em;
+  width: 8.3em;
   opacity: 0;
-  -webkit-animation: type3 2s steps(40, end), blink .5s step-end infinite alternate;
-  animation: type3 2s steps(40, end), blink .5s step-end infinite alternate;
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
+  -webkit-animation: type3 1s steps(40, end), blink .5s step-end infinite alternate;
+  animation: type3 1s steps(40, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -41,7 +111,7 @@
     width: 0;
   }
   99.9% {
-    border-right: .15em solid orange;
+    border-right: .15em solid black;
   }
   100% {
     border: none;
@@ -53,7 +123,7 @@
     width: 0;
   }
   99.9% {
-    border-right: .15em solid orange;
+    border-right: .15em solid black;
   }
   100% {
     border: none;
@@ -68,7 +138,7 @@
     opacity: 1;
   }
   99.9% {
-    border-right: .15em solid orange;
+    border-right: .15em solid black;
   }
   100% {
     opacity: 1;
@@ -84,7 +154,7 @@
     opacity: 1;
   }
   99.9% {
-    border-right: .15em solid orange;
+    border-right: .15em solid black;
   }
   100% {
     opacity: 1;
@@ -133,11 +203,12 @@
 
 
 
+
 /* Timeline Container */
 .timeline {
-  background: var(--primary-color);
-  margin: 20px auto;
-  padding: 20px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
 }
 
 /* Outer Layer with the timeline border */
@@ -150,10 +221,11 @@
   position: relative;
   margin: 0 0 20px 20px;
   padding: 10px;
-  background: #333;
-  color: gray;
+  background: rgb(247, 241, 241);
   border-radius: 8px;
   max-width: 400px;
+  border: 1px dashed black;
+  font-size: 13px;
 }
 
 /* Information about the timeline */
@@ -165,7 +237,7 @@
 
 /* Title of the card */
 .title {
-  color: orangered;
+  color: black;
   position: relative;
 }
 
@@ -175,8 +247,32 @@
   position: absolute;
   width: 10px;
   height: 10px;
-  background: white;
+  background: black;
   border-radius: 999px;
   left: -39px;
-  border: 3px solid orangered;
+  border: 3px solid black;
+}
+
+
+
+
+
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.project-text {
+    width: 50%;
 }
